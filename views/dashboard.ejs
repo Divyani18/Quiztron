@@ -1,0 +1,75 @@
+<%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/navbar') %>
+    
+    <div class="container-fluid">
+
+        <div class="my-3 flex-container" id="dashboardPanel">
+
+            <div class="leftPanelD flex-container my-2 col-lg-3">
+                <div class="profile card flex-container col-sm-12">
+                    <div style="margin:auto;">
+                        <div class="my-3 bg-dark p-2" style="height: 10rem; width: 10rem; border-radius: 50%; margin: auto;">
+                            
+                        </div>
+                    </div>
+                       
+                   
+                    <div class="card-body">
+                        <h5 class="card-title"><%= username %></h5>
+                        <p class="card-text">Earned Qoins: <%= Qoins %></p>
+                        <a href="/leaderboard" class="btn btn-primary">Check leaderboard</a>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="rightPanelD flex-container my-2 col-lg-9">
+                <div class="card col-sm-12" style="width: 50rem;">
+                    <div class="card-body">
+                        <h1 class="ml-3 display-6"><b>Performance Analysis</b></h1>
+                        <p class="card-text"></p>
+
+                        <div class="rightCard flex-container">
+
+                            <div class="innerCard card col-sm-12 col-md-4 my-2">
+                                <div class="card-body"> 
+                                    <h5 class="card-title" style="color: rgba(51,32,42,1);">Overall Scorecard</h5>
+                                    <p class="card-text">Correct attempts: <span class="score"><%= correct %></span></p>
+                                    <p class="card-text">Incorrect attempts: <span class="score"><%= incorrect %></span></p>
+                                    <p class="card-text">Skipped: <span class="score"><%= skipped %></span></p>
+                                </div>
+                            </div>
+
+                            <div class="innerCard card col-sm-12 col-md-4 my-2">
+                                <div class="card-body"> 
+                                    <h5 class="card-title" style="color: rgba(51,32,42,1);">Percentages</h5>
+                                    <p class="card-text">Percentage Correct: <span class="score"><%= pCorrect %>%</span></p>
+                                    <p class="card-text">Percentage Incorrect: <span class="score"><%= pIncorrect %>%</span></p>
+                                    <p class="card-text">Percentage Skipped: <span class="score"><%= pSkipped %>%</span></p>
+                                </div>
+                            </div>
+
+                            <div class="innerCard card col-sm-12 col-md-4 my-2">
+                                <div class="card-body"> 
+                                    <h5 class="card-title" style="color: rgba(51,32,42,1);">Overall Accuracy</h5>
+                                    <p class="card-text"><%= accuracy %>%</p>
+                                </div>
+                            </div>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <%- include('partials/footerLinks') %>
+
+</body>
+	
+	
+</html>

@@ -1,0 +1,248 @@
+body{
+	height: 100vh;
+	background-color: rgba(255,255,255,1) !important;
+	/*background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm262-kul-01.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=c163d41be8678ac109c10ee33e3d41db);*/
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+
+div.card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.innerCard{
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+h1.display-4{
+	font-family: "Montserrat", sans-serif;
+	color: rgba(51,32,42,1);
+	text-shadow: 2px 2px 2px grey;
+
+}
+
+
+p.lead{
+	color: rgba(41,77,54,1);
+}
+
+
+.navbar{
+	background-color: rgba(65,6,1,1);
+	font-family: "Nunito", sans-serif;
+
+}
+
+
+#practiceflex.flex-container{
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	font-family: "EB Garamond", serif;
+	
+}
+
+
+div.left{
+	flex-grow: 1;
+	
+}
+
+
+div.middle{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+}
+
+div.right{
+	flex-grow: 1;
+
+}
+
+
+div.ques{
+	flex-grow: 1;
+	color: rgba(51,32,42,1);
+}
+
+div.opt{
+	flex-grow: 2;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+div.a{
+	flex-grow: 1;
+}
+
+button.flex-container{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+
+.submitLine{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.submit{
+	flex-grow: 1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.skip{
+	flex-grow: 1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ansResult{
+	display: flex;
+    align-items: center;
+  	justify-content: center;
+	background: rgba(238,240,237,1);
+}
+
+.newCard{
+	display: flex;
+    align-items: center;
+  	justify-content: center;
+	background: rgba(238,240,237,1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginPage{
+	display: flex;
+	flex-direction: row;
+	height: 80vh;
+}
+
+.login{
+	margin: auto;
+	flex-grow: 0.15;
+}
+
+#loginHead{
+	text-align: center;
+}
+
+.errMessage{
+	color: rgba(65,6,1,1);
+}
+
+
+#dashboardPanel.flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 100vh;
+	font-family: "EB Garamond", serif;
+	
+}
+
+div.leftPanelD{
+	display: flex;	
+}
+
+div.rightPanelD{
+	display: flex;
+
+}
+
+div.profile{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.rightCard {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.score {
+	justify-content: end;
+}
+
+#leaderboardPanel.flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 100vh;
+	font-family: "EB Garamond", serif;
+	
+}
+
+div.leftPanelL{
+	flex-grow: 3;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+div.rankRow{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+div.rank{
+	flex-grow: 1;
+	text-align: start;
+}
+
+div.user{
+	flex-grow: 2;
+	text-align: start;
+}
+
+div.qoinsEarned{
+	flex-grow: 1;
+	text-align: end;
+}
+
+div.rightPanelL{
+	flex-grow: 1;
+}
+
+div.topicPanel{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	
+}
+
+div.topicSelect{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-family: 'Nunito', sans-serif;
+}
+
+#topic1{
+	box-shadow: 0 4px 8px 0 rgba(94, 8, 8, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+#topic2{
+	box-shadow: 0 4px 8px 0 rgba(9, 26, 51, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+#topic3{
+	box-shadow: 0 4px 8px 0 rgba(40, 112, 25, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}

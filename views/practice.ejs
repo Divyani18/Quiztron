@@ -1,0 +1,129 @@
+<%- include('partials/head') %>
+
+<body>
+
+	<%- include('partials/navbar') %>
+	
+	<div class="container-fluid my-3">
+		<div class="flex-container" id="practiceflex">
+		
+			<div class="left">
+				<div class="sessionInfo border rounded">
+					<div style="text-align: center; margin-top: 0.75rem; color:rgb(102, 45, 67);"><h6>Current Session Status</h6></div>
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+						  Correct:
+						  <span class="correctCount badge badge-primary badge-pill">0</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+						  Incorrect:
+						  <span class="incorrectCount badge badge-primary badge-pill">0</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+						  Skipped:
+						  <span class="skipCount badge badge-primary badge-pill">0</span>
+						</li>
+					  </ul>
+				</div>
+
+
+				<div class="progress" aria-valuemin="0" aria-valuemax="100">
+					<div class="progress-bar" id="prog1" role="progressbar" style="width: 0%; background: rgb(51, 168, 35)" aria-valuenow="0"></div>
+					<div class="progress-bar" id="prog2" role="progressbar" style="width: 0%; background: rgb(185, 45, 10)" aria-valuenow="0"></div>
+					<div class="progress-bar bg-warning" id="prog3" role="progressbar" style="width: 0%" aria-valuenow="0"></div>
+				</div>
+			</div>
+			
+			
+			<div class="flex-container middle">
+				<div>
+					<div class="ques mx-3 mb-3 mt-1 p-1 border rounded">
+						<div id="qDescription" class="mx-5 my-2">Question</div>
+					</div>
+					
+					<div class="flex-container opt m-2 p-1">
+						
+						<form>
+						
+							<div class="a m-1">
+									
+								<button type="button" class="btn btn-outline-info my-1 flex-container" for="i">
+									<div><input name="ans" value="1" type="radio" class="mr-3"></div>
+									<div id="A">Option-A</div>
+								</button>	
+								
+							</div>
+								
+							<div class="a m-1">
+						
+								<button type="button" class="btn btn-outline-info my-1 flex-container" for="ii">
+									<div><input name="ans" value="2" type="radio" class="mr-3"></div>
+									<div id="B">Option-B</div>
+								</button>
+								
+							</div>
+								
+							<div class="a m-1">
+						
+								<button type="button" class="btn btn-outline-info my-1 flex-container" for="iii">
+									<div><input name="ans" value="3" type="radio" class="mr-3"></div>
+									<div id="C">Option-C</div>
+								</button>
+								
+							</div>
+								
+							<div class="a m-1">
+							
+								<button type="button" class="btn btn-outline-info my-1 flex-container" for="iv">
+									<div><input name="ans" value="4" type="radio" class="mr-3"></div>
+									<div id="D">Option-D</div>
+								</button>
+								
+							</div>
+								
+						</form>
+								
+					</div>
+				
+				
+					<div class="flex-container submitLine">
+
+						<button type="button" class="btn btn-warning submit m-2"><b>Submit Answer</b></button>
+						<button type="button" class="skip btn skip mr-1 ml-2 my-2" style="background: rgba(198, 183, 247, 1)"><b>Skip Flashcard</b></button>
+						
+					</div>
+
+					<button id="ansResult" type="button" class="btn btn-block btn-lg"></button>
+					
+					<div>
+						
+					</div>
+					
+					<div class="newCard my-5">
+						<button id="btnNext" type="button" class="btn btn-block btn-lg"><b>Pick new flashcard!</b></button>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="right">
+				<div class="card viewSol">
+					<button class="btn btn-block btn-lg" style="background:rgb(248, 150, 112)">View Answer</button>
+				</div>
+				<div class="my-3 sol">
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<%- include('partials/footerLinks') %>
+
+	<script type="text/javascript" src="public/second.js"></script>
+
+</body>
+	
+	
+</html>

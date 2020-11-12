@@ -1,0 +1,73 @@
+<%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/navbar') %>
+
+    <div class="container-fluid">
+
+        <div class="my-4 flex-container" id="leaderboardPanel">
+
+            <div class="leftPanelL border rounded flex-container col-sm-12 col-lg-9">
+                <h1 class="m-3 display-6"><b>Leaderboard</b></h1>
+                        
+                <div class="rankRow flex-container border ">
+                    <div class="rank mr-2 ml-4 my-2">
+                        <h5>Rank</h5>
+                    </div>
+                    <div class="user mx-2 my-2">
+                        <h5>User</h5>
+                    </div>
+                    <div class="qoinsEarned mr-4 my-2">
+                        <h5>Qoins</h5>
+                    </div>
+                </div>
+
+                <% let i=1; %>
+                <% rankings.forEach(ranking => { %>
+                            
+                    <div class="rankRow flex-container border ">
+                        <div class="rank mr-2 ml-4 my-2">
+                            <h5><%= i %></h5>
+                        </div>
+                        <div class="user mx-2 my-2">
+                            <h5><%= ranking.username %></h5>
+                        </div>
+                        <div class="qoinsEarned mr-4 my-2">
+                            <h5><%= ranking.totalCorrect %></h5>
+                        </div>
+                    </div>
+
+                    <% i++; %>
+
+                <% }) %>
+                                
+            </div>
+
+
+            <div class="rightPanelL col-lg-3 d-sm-none d-lg-inline">
+                <div class="card">
+
+                    <div class="my-3 bg-dark" style="height: 10rem; width: 10rem; border-radius: 50%; margin: auto">
+                        
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title"><%= username %></h5>
+                        <p class="card-text">Earned Qoins: <%= Qoins %></p>
+                    </div> 
+                </div>
+
+            </div>
+                    
+        </div>
+    
+    </div>
+    
+
+    <%- include('partials/footerLinks') %>
+
+</body>
+	
+	
+</html>

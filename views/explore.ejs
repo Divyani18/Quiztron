@@ -1,0 +1,77 @@
+<%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/navbar') %>
+    
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+		<%= messages %>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+
+	<div class="container-fluid">
+
+        <div class="topicPanel flex-container my-5 col-sm-12" style="font-family: 'EB Garamond', serif;">
+			<div class="card col-md-6">
+				<div class="card-body">
+					<h1 style="font-size: 2rem;"><b>Choose a topic:</b></h1>
+
+					<div class="topicSelect flex-container">
+
+						<button onclick="startQuiz(1)" type="button" class="btn col-sm-12 col-xl-4 p-2 my-2" id="topic1" data-toggle="modal" data-target="#staticBackdrop" style="width: 10rem; height: 12rem; background: rgb(252, 161, 76); color: white">
+							<h5 class="card-title"><b>Computer Science</b></h5>
+									
+						</button>
+								
+						<button onclick="startQuiz(2)" type="button" class="btn col-sm-12 col-xl-4 p-2 my-2" id="topic2" data-toggle="modal" data-target="#staticBackdrop" style="width: 10rem; height: 12rem; background: rgb(53, 108, 211); color: white">
+							<h5 class="card-title"><b>Science and Nature</b></h5>
+									
+						</button>
+							
+						<button onclick="startQuiz(3)" type="button" class="btn col-sm-12 col-xl-4 p-2 my-2" id="topic3" data-toggle="modal" data-target="#staticBackdrop" style="width: 10rem; height: 12rem; background: rgb(33, 112, 26); color: white">
+							<h5 class="card-title"><b>General Knowledge</b></h5>
+									
+						</button>
+						
+					</div>
+					  
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+		        <div class="modal-header">
+		            <h5 class="modal-title" id="staticBackdropLabel">Awesome! You have taken the first step forward.</h5>
+		            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			            <span aria-hidden="true">&times;</span>
+		            </button>
+                </div>
+                
+		        <div class="modal-body">
+		             Get ready to test yourself! All the best.
+                </div>
+                
+		        <div class="modal-footer">
+		            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+		            <a class="startQuiz btn btn-outline-primary" href="/practice" role="button">Start</a>
+		        </div>
+	        </div>
+	    </div>
+    </div>
+
+  <%- include('partials/footerLinks') %>
+
+  <script type="text/javascript" src="public/first.js"></script>
+
+</body>
+	
+	
+</html>

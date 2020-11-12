@@ -1,0 +1,41 @@
+<%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/navbar1') %>
+
+    <div class="loginPage flex-container">
+        <div class="left">
+            
+        </div>
+
+        <div class="login card py-5 px-4 border rounded">
+        
+            <form action="/register" method="POST">
+                <h4 id="loginHead" class="mx-3">Quiztron</h4>
+                <div class="form-group">
+                    <input type="username" name="username" class="form-control input-sm" id="inputUsername" placeholder="Username" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" id="inputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" id="inputEmail1" placeholder="E-mail address" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-success btn-block"><b>Sign Up</b></button>
+            </form>
+            
+            <p class="my-3">Already have an account? <a href="/login">Login</a></p>
+        </div>
+        
+        <div class="right">
+            
+        </div>
+    </div>
+    
+    <%- include('partials/footerLinks') %>
+
+</body>
+	
+	
+</html>
