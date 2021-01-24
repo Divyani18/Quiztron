@@ -83,6 +83,8 @@ async function assignQuestion(url){
 			let p1 = (correct/sum)*100;
 			let p2 = (incorrect/sum)*100;
 			let p3 = (skipped/sum)*100;
+
+			dbUpdate(correct, incorrect, skipped);
 	
 			$("#prog1").css("width", p1+"%");
 			$("#prog1").attr("aria-valuenow", p1);

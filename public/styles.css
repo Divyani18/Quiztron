@@ -39,6 +39,7 @@ p.lead{
 #practiceflex.flex-container{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	height: 100vh;
 	font-family: "EB Garamond", serif;
 	
