@@ -16,10 +16,11 @@ div.innerCard{
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
-h1.display-4{
+h2.greet{
 	font-family: "Montserrat", sans-serif;
 	color: rgba(51,32,42,1);
-	text-shadow: 2px 2px 2px grey;
+	text-shadow: 0.2vw 0.2vw 0.2vw grey;
+	/* font-size: 5.4vw; */
 
 }
 
