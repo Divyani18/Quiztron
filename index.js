@@ -16,8 +16,9 @@ const flash = require("connect-flash");
 var urlObj;
 
 const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/WebD_Project";
+const db = process.env.DB
 //const dbUrl = "mongodb://localhost:27017/WebD_Project";
-mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true, dbName: db})
 .then(() => {
 	console.log("DB CONNECTED!");
 })
